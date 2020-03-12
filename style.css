@@ -1,0 +1,84 @@
+/*common style in every page*/
+*,
+::before,
+::after{
+    box-sizing:border-box;
+    margin:0;padding:0;
+}
+html{
+    font-size:62.5%!important;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{display:none;}
+html:hover::-webkit-scrollbar{display:none;}
+html::-webkit-scrollbar-thumb{background:#888;}
+body{
+    height:100%;width:100%;
+    background:#fff;
+    margin:0;padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.6rem;
+    font-weight:400;
+}
+
+/* common style in link area */
+a:link,
+a:visited{
+    color:#222;
+}
+a:hover{
+    color:rgb(0, 80, 180);
+    text-decoration:none;
+}
+a:focus{
+    color:rgb(0, 60, 155);
+    text-decoration:none;
+}
+
+/* common style in icon area */
+i{
+    font-size:1.8rem;
+}
+.material-icons{
+    font-size:2.1rem;
+    cursor: pointer;
+}
+
+
+/* Common style in submit, text, email, password, tel area */
+input[type="submit"], button{
+    color:white;
+    font-size:1.5rem;
+    padding:0.5rem 1.2rem;
+    background:rgba(0, 0, 0, 0.6);
+    border-radius:0.8rem;border:0.1rem solid rgb(80, 80, 80, 0.5);
+}
+input[type="submit"]:hover, button:hover{
+    background:rgba(0, 0, 0, 0.726);
+}
+input[type="submit"]:focus button:focus{
+    outline:none;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"]{
+    padding:0.5rem 1.2rem;
+    font-size:1.5rem;
+    border-radius:0.8rem;border:0.1rem solid rgb(80, 80, 80, 0.5);
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover{
+    outline:none;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="tel"]:focus{
+    outline:none;
+    border:0.2rem solid rgb(80, 80, 80);
+    box-shadow:0.3rem 0.5rem 0.8rem rgba(0,0,0,0.6);
+    transition:0.2s;
+}

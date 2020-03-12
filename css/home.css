@@ -1,0 +1,92 @@
+/*
+Editor Info:-
+Name: Anik chandra das.
+Email: anikdas842@gmail.com
+
+Code Info:-
+Starting Date: 11-03-2020
+Info: This code are control of design. 
+*/
+header{
+    height:10vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    background:#fff;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom:0.1rem solid #000;
+}
+header .logo{
+    flex-grow:1.5;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+header .logo img{
+    height:8vh;
+    margin:1vh auto;
+    transition:all 0.25s;
+}
+header .logo img:hover{
+    transform: scale(1.15);
+}
+
+header .search_bar{
+    flex-grow:4.2;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* replace and rewrite code in style section only submit area */
+header .search_bar input[type='text']{
+    width:92%;height:7vh;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border:none;
+    background:#f5f5f5;
+    box-shadow: none;
+}
+header .search_bar .search_button{
+    width:8%;height:7vh;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border:none;
+    background:rgba(59, 59, 59, 0.555);
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+}
+header .search_bar .search_button i{
+    font-size:2.6rem!important;
+    font-weight:lighter;
+}
+header .search_bar .search_button:hover{
+    background:rgba(59, 59, 59, 0.897);
+}
+header .icons{
+    flex-grow:1.8;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5rem;
+}
+header .icons a{
+    color:#444;
+    border-left:0.1rem solid #000;
+    padding:0 1rem;
+    text-decoration: none;
+}
+header .icons a:hover{
+    color:#222;
+}
+header .icons a:first-child{
+    border-left:none;
+}
+header .icons a i{
+    vertical-align: middle;
+}
+header .icons a span{
+    font-size: 1.4rem;
+    color:#777;
+}
